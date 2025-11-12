@@ -1,23 +1,19 @@
 import Product from "./Product.js";
-
 export default class PhysicalProduct extends Product {
-   private _weight: number;
-
-    constructor(sku: string, name: string, price: number, weight: number){
+    _weight;
+    constructor(sku, name, price, weight) {
         super(sku, name, price);
         this._weight = weight;
     }
-
-    get weight(): string {
+    get weight() {
         return `${this._weight} kg`;
-        }
-    
-    getPriceWithTax(): number {
+    }
+    getPriceWithTax() {
         const taxRate = 0.1; // 10%
         return this.price + this.price * taxRate;
     }
-
-    displayDetails(): string {
+    displayDetails() {
         return `${super.displayDetails()} Weight: ${this.weight}`;
-      }
+    }
 }
+//# sourceMappingURL=PhysicalProduct.js.map

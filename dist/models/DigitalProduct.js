@@ -1,22 +1,18 @@
 import Product from "./Product.js";
-
 export default class DigitalProduct extends Product {
-   private _fileSize: number;
-
-    constructor(sku: string, name: string, price: number, fileSize: number) {
+    _fileSize;
+    constructor(sku, name, price, fileSize) {
         super(sku, name, price);
         this._fileSize = fileSize;
     }
-
-    get fileSize(): string {
+    get fileSize() {
         return `${this._fileSize} MB`;
-        }
-        
-    getPriceWithTax(): number {
+    }
+    getPriceWithTax() {
         return this.price;
     }
-
-    displayDetails(): string {
+    displayDetails() {
         return `${super.displayDetails()} File size: ${this.fileSize}`;
-      }      
+    }
 }
+//# sourceMappingURL=DigitalProduct.js.map
