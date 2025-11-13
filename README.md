@@ -68,14 +68,7 @@ git clone https://github.com/KaeTheDev/Inventory-Tracker.git
 cd inventory-tracker
 
 ## Setup
-1. Install dependencies:
-npm install
-
-2. Compile TypeScript to JavaScript:
-npx tsc
-The compiled JS files will be placed in the dist/ folder.
-
-3. Run the project:
+1. Run the project:
 node dist/main.js
 
 ⚠️ Note: This project uses ES Modules, so all import paths include .js in the TypeScript files. Node requires these to run the compiled JS correctly.
