@@ -13,7 +13,7 @@ export default class Product {
     return `${this.name} costs $${this.price} and the SKU is ${this.sku}.`;
   }
 
-  getPriceWithTax(taxRate: number): number {
-    return (this.price = this.price * taxRate);
+  getPriceWithTax(): number {
+    return this.price;
   }
 }
