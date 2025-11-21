@@ -1,5 +1,5 @@
-import PhysicalProduct from "./models/PhysicalProduct";
-import DigitalProduct from "./models/DigitalProduct";
+import PhysicalProduct from "./models/PhysicalProduct.js";
+import DigitalProduct from "./models/DigitalProduct.js";
 
 const book = new PhysicalProduct("9502", "JavaScript for Beginners", 10, 20);
 const headphones = new DigitalProduct("9250", "Apple Beats", 250, 20);

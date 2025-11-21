@@ -10,8 +10,8 @@ export default class Product {
     displayDetails() {
         return `${this.name} costs $${this.price} and the SKU is ${this.sku}.`;
     }
-    getPriceWithTax(taxRate) {
-        return (this.price = this.price * taxRate);
+    getPriceWithTax() {
+        return this.price;
     }
 }
 //# sourceMappingURL=Product.js.map
